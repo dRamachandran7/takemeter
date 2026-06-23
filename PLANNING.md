@@ -8,7 +8,7 @@ For this project, we will be using the subreddit r/F1Discussions. This is a good
 
 ## Labels
 
-- 'speculation': A post/comment classified as 'speculation' is one that makes predictions about the future actions of a driver or team, or guesses about information that is not readily available. Examples:
+- 'question': A post/comment classified as 'question' is one that proposes a question that could be about anything, ranging from predictions about the future or current events. 
 
 1. 
 Where do we think Sainz actually ends up long term?
@@ -16,7 +16,10 @@ Where do we think Sainz actually ends up long term?
 Williams feels like a stopgap to me. If Audi or Cadillac come knocking with a proper project I think Carlos jumps. Hard to see him spending his prime in the midfield.
 
 2. 
-Ralf Schumacher speculated on Sky Sports Germany that Max Verstappen already received an underwhelming Mercedes offer for 2027. Jos Verstappen responded "Ralf, again you bring wrong information".
+"Where were you when you first learned about Lewis' move to Ferrari, and what were your first thoughts and reactions?
+Personally, I was really surprised. I was a new fan, and wasn't expecting that to happen at all.
+
+How did you guys feel?"
 
 ---
 
@@ -46,35 +49,27 @@ Like god forbid a driver has a rough patch... almost every even GOAT tier driver
 
 ---
 
-- 'question': A post/comment that can be classified as a 'question' is one that proposes something to the reader, usually with the intention of starting a discussion. Examples:
-
-1. 
-Where were you when you first learned about Lewis' move to Ferrari, and what were your first thoughts and reactions?
-Personally, I was really surprised. I was a new fan, and wasn't expecting that to happen at all.
-
-How did you guys feel?
-
-(Edit: One more question. As a football fan, would this be the equivalent of messi/ronaldo leaving Man City to go to Real Madrid?)
-
-2. 
-What do you think about Jenson Button and his Formula 1 career?
-
-
 ## Hard Edge Cases
 
 When classifying, there may be inputs that could reasonably be placed in to more than one category. 
 
 One specific example are posts that start witha question that isn't open ended, and rather has a binary answer. If it goes on to try and support one of the binary answers, it should be handled as an argument, rather than a question.
 
+The core distinction between the two labels: a 'question' opens something up to the reader to respond to (even if it includes the author's own lean), whereas an 'argument' is primarily trying to convince the reader of a point using supporting reasoning or evidence. If a post both asks something and makes a supported case, the dominant intent wins — if it is mainly arguing a side, it is an 'argument'.
+
+## Unclear / Removal
+
+Some scraped posts fit neither label and should be removed during cleaning rather than forced into one. These include: pure statements of news or fact with no question and no argued point, image- or link-only posts with little to no text, off-topic or meta/moderation posts, and single-line reactions that neither ask anything nor support a point. "Unclear" is a cleaning bucket, not a final label.
+
 ## Data Collection
 
-To get our 200 samples, we can run a web scraping script on r/F1Discussions. WE should aim for a roughly even split of the 3 labels, but with a script we should simply take what we can get. To ensure that the least represented category on the subreddit, 'question' gets adequete coverage, we can run the script in 2 rounds.
+To get our samples, we can run a web scraping script on r/F1Discussions. WE should aim for a roughly even split of the 2 labels (question and argument), but with a script we should simply take what we can get. To ensure that the least represented category on the subreddit, 'question' gets adequete coverage, we can run the script in 2 rounds.
 
 1. Try to collect about 40 samples with question marks in them. These will likely be questions, or discussions.
 
-2. For the remaining 200, we will simply keep collecting posts as they appear.
+2. For the remaining, we will simply keep collecting posts as they appear.
 
-In total then, we end up with 240 samples, which we can then clean down to 200 by removing samples that are noisy or don't adhere to the 3 categories. 
+In total then, we aim for around 270 samples, which we can then clean by removing samples that are noisy or don't adhere to the 2 categories (the "unclear" bucket above). 
 
 ## Evaluation
 

@@ -28,7 +28,7 @@ from openpyxl.styles import Alignment, Font
 
 SUBREDDIT = "F1Discussions"
 QUESTION_TARGET = 40      # Round 1: posts containing "?"
-TOTAL_TARGET = 240        # Round 1 + Round 2 combined
+TOTAL_TARGET = 270        # Round 1 + Round 2 combined
 PAGE_LIMIT = 100          # posts per request (Arctic Shift max)
 REQUEST_PAUSE = 1.0       # seconds between requests (be polite)
 OUTPUT_XLSX = "f1discussions_samples.xlsx"
@@ -157,8 +157,8 @@ def main():
     wb.save(OUTPUT_XLSX)
     print(f"Saved -> {OUTPUT_XLSX}")
     print("\nNext steps:")
-    print("  1. Open the file, fill in the 'label' column (speculation/argument/question),")
-    print("     and delete noisy / off-topic rows until you have ~200.")
+    print("  1. Open the file, fill in the 'label' column (question / argument),")
+    print("     and delete noisy / off-topic ('unclear') rows.")
     print("  2. Save As -> CSV when you're done.")
 
 
