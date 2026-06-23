@@ -11,13 +11,9 @@ For this project, we will be using the subreddit r/F1Discussions. This is a good
 - 'speculation': A post/comment classified as 'speculation' is one that makes predictions about the future actions of a driver or team, or guesses about information that is not readily available. Examples:
 
 1. 
-What is going on with Mercedes and George?
+Where do we think Sainz actually ends up long term?
 
-Body: I can't help but feel iffy about this whole situation. Spain was an improvement from past few races, but still, almost no crew members showed up to his podium. Feel deflated and sad about the DNF and potential lost win all you want, but one of your drivers is being celebrated on a podium, after 100 GPs with the team, at least show up.
-
-Even their LinkedIn post talks about strategy error, Lewis and Kimi, not even mentioning George. That's not ig or TikTok, LinkedIn is corporate platform. And the YouTube community post isn't much better. 10 photos, George is in 1 of them. The driver who didn't finish the race gets more spotlight than a podium finisher.
-
-They keep saying George has great support from the team, and maybe he does behind the scenes, but would it hurt to actually show that support publicly? The praise sounds empty when the team does stuff like this. Toto can praised George after quali, but if this happens when it actually matters - after the race where the points are awarded and where you can publicly show how you stand by your driver, it isn’t a good look...
+Williams feels like a stopgap to me. If Audi or Cadillac come knocking with a proper project I think Carlos jumps. Hard to see him spending his prime in the midfield.
 
 2. 
 Ralf Schumacher speculated on Sky Sports Germany that Max Verstappen already received an underwhelming Mercedes offer for 2027. Jos Verstappen responded "Ralf, again you bring wrong information".
